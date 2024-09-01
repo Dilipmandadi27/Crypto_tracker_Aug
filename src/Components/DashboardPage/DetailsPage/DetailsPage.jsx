@@ -12,7 +12,7 @@ import getCoinPrice from "../../../Functions/getCoinPrice";
 import LineChart from "./LineChart/LineChart";
 import { convertDate } from "../../../Functions/ConvertDate";
 import SelectDays from "./SelectDays/SelectDays";
-import { settingChartData } from "../../../Functions/SettingChartData";
+import settingChartData from "../../../Functions/settingChartData";
 
 function DetailsPage() {
   const { id } = useParams();

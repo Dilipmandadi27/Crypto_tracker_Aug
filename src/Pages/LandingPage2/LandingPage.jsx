@@ -4,10 +4,10 @@ import Main from "../../Components/LandingPage/Main/Main";
 
 import "./LandingPage.css";
 
-const LandingPage = ({ toggleTheme }) => {
+const LandingPage = () => {
   return (
     <div className="land">
-      <Header toggleTheme={toggleTheme} />
+      <Header />
       <Main />
     </div>
   );

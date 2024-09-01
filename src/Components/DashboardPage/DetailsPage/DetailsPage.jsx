@@ -11,8 +11,8 @@ import { getCoinData } from "../../../Functions/getCoinData";
 import getCoinPrice from "../../../Functions/getCoinPrice";
 import LineChart from "./LineChart/LineChart";
 import { convertDate } from "../../../Functions/ConvertDate";
-import { settingChartData } from "../../../Functions/SettingChartData";
 import SelectDays from "./SelectDays/SelectDays";
+import { settingChartData } from "../../../Functions/SettingChartData";
 
 function DetailsPage() {
   const { id } = useParams();

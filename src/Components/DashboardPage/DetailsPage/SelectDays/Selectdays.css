@@ -1,0 +1,15 @@
+.selectdays {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  padding-bottom: 120px;
+}
+
+.select {
+  border: 2px solid white;
+  background-color: #fff;
+  color: black;
+  width: 120px;
+  height: 40px;
+}

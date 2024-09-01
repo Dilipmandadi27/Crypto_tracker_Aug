@@ -1,0 +1,11 @@
+.pagination-component {
+  margin-bottom: 40px !important;
+  background: white;
+  border-radius: 30px;
+  width: fit-content;
+  margin: auto;
+}
+
+/* .pagination-component:hover {
+  background-color: black;
+} */

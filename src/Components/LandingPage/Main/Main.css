@@ -1,0 +1,69 @@
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.headings {
+  margin-top: 90px;
+}
+
+.heading1,
+.heading2 {
+  font-size: 135px;
+  font-weight: 700;
+}
+
+.heading1 {
+  color: white;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+}
+
+.heading1:hover {
+  -webkit-text-stroke-color: white;
+  transition: all 0.3s;
+  color: black;
+}
+
+.heading2 {
+  color: #3a80e9;
+}
+
+.tagline {
+  color: gray;
+  margin: 16px 0px;
+  font-size: 16px;
+}
+
+.phone-container {
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+.image_container {
+  width: 40%;
+  position: relative;
+  padding: 1rem;
+  position: sticky;
+}
+
+.iphone {
+  position: absolute;
+  z-index: 100;
+  min-width: 350px;
+  width: 40%;
+  right: 0;
+}
+
+.gradient {
+  position: absolute;
+  min-width: 300px;
+  width: 40%;
+  top: 8rem;
+  right: 0;
+}
+
+.btns {
+  margin-top: 40px;
+}

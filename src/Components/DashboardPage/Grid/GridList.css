@@ -1,0 +1,118 @@
+.card-container {
+  width: 300px;
+  height: 300px;
+  background-color: #1b1b1b;
+  border-radius: 15px;
+  padding: 35px;
+}
+
+.card-container:hover {
+  border: 2px solid #66e677;
+}
+
+.grid-box-red:hover {
+  border: 2px solid #f94141;
+}
+
+.card-items {
+  display: flex;
+  gap: 15px;
+}
+
+.card-items img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.Coin_symbol {
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.Coin_Name {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: grey;
+  font-weight: 600;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.red-indicators p {
+  border: 2px solid #f94141 !important;
+  padding: 10px;
+  border-radius: 20px;
+  color: #f94141 !important;
+  font-weight: 600;
+}
+
+.red-indicators p:hover {
+  background: #f94141 !important;
+  color: white !important;
+}
+
+.graph_red {
+  border: 2px solid #f94141 !important;
+  padding: 5px 6px;
+  border-radius: 50%;
+  color: #f94141 !important;
+}
+
+.graph_red:hover {
+  background-color: #f94141 !important;
+  color: white !important;
+}
+
+.chip p:hover {
+  background-color: #61c96f;
+  color: white;
+}
+
+.chip p {
+  border: 2px solid #61c96f;
+  padding: 10px;
+  border-radius: 20px;
+  color: #61c96f;
+  font-weight: 600;
+}
+
+.chip .img {
+  border: 2px solid #61c96f;
+  padding: 5px 6px;
+  border-radius: 50%;
+  color: #61c96f;
+}
+
+.chip .img:hover {
+  background-color: #61c96f;
+  color: white;
+}
+
+.price p {
+  margin-top: 20px;
+  color: #61c96f;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.red-price p {
+  margin-top: 20px;
+  color: #f94141;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.qty {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.qty p {
+  font-size: 13px;
+  font-weight: 600;
+}

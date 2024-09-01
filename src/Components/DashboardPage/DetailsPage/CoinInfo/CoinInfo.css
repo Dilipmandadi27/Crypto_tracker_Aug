@@ -1,0 +1,20 @@
+.CoinInfo {
+  background-color: rgba(27, 27, 27);
+  padding: 25px 15px;
+  margin-top: 100px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.coin-info-desc a {
+  text-decoration: underline;
+}
+
+.coin-info-desc p:hover {
+  color: #1976d2;
+}

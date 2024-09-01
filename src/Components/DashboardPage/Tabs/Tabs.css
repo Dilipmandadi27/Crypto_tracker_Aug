@@ -1,0 +1,12 @@
+.TabsComponent {
+  margin-top: 2%;
+}
+
+.GridList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 10px 30px;
+}

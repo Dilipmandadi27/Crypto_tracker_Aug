@@ -1,14 +1,15 @@
 import React from "react";
 import "./Button.css";
+import { Link } from "react-router-dom";
 
-function Button() {
+const Button = () => {
   return (
     <div className="btn">
-      {/* <a href="/"> */}
-      <button className="db-Btn">Dashboard</button>
-      {/* </a> */}
+      <Link to="/dashboard">
+        <button className="db-Btn">Dashboard</button>
+      </Link>
     </div>
   );
-}
+};
 
 export default Button;

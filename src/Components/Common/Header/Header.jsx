@@ -8,7 +8,9 @@ function Header({ toggleTheme }) {
     <div className="navbar">
       <div className="logo">
         <Link to="/">
-          <h3>AAjet.</h3>
+          <h3>
+            Aa<span className="aajet">jet.</span>
+          </h3>
         </Link>
         <div className="navigations">
           <label className="switch">
@@ -24,7 +26,7 @@ function Header({ toggleTheme }) {
           </Link>
 
           <Link to="/dashboard">
-            <Button />
+            <Button variant="default">DashBoard</Button>
           </Link>
         </div>
       </div>

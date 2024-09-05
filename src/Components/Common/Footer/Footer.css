@@ -1,4 +1,39 @@
 .footer {
-  background-color: black;
+  background-color: #3a80e9;
   color: white;
+  width: 100%;
+  height: 150px;
+  margin-top: 250px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.contents_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 35px;
+  padding: 20px;
+}
+
+.contactUS {
+  text-decoration: underline;
+  color: white !important;
+}
+
+h2 {
+  color: white !important;
+}
+
+.contents_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.Copyrights {
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 20px !important;
 }

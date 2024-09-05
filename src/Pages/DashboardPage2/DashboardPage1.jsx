@@ -5,12 +5,15 @@ import Tabs from "../../Components/DashboardPage/Tabs/Tabs";
 import axios from "axios";
 import PaginationComponent from "../../Components/DashboardPage/Pagination/Pagination";
 import "./DashboardPage1.css";
+import Footer from "../../Components/Common/Footer/Footer";
+import get100Coins from "../../Functions/get100Coins";
 
 function DashboardPage1() {
   const [allcoins, setAllCoins] = useState([]);
   const [paginatedCoins, setPaginatedCoins] = useState([]);
   const [searchInput, setSearchInput] = useState("");
   const [page, setPage] = useState(1);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handlePageChange = (event, value) => {
     setPage(value);
@@ -29,19 +32,17 @@ function DashboardPage1() {
   );
 
   useEffect(() => {
-    axios
-      .get(
-        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
-      )
-      .then((response) => {
-        console.log(response);
-        setAllCoins(response.data);
-        setPaginatedCoins(response.data.slice(0, 10));
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    getData();
   }, []);
+
+  const getData = async () => {
+    const myCoins = await get100Coins();
+    if (myCoins) {
+      setAllCoins(myCoins);
+      setPaginatedCoins(myCoins.slice(0, 10));
+      setIsLoading(false);
+    }
+  };
 
   return (
     <div className="DashboardPage1">
@@ -51,6 +52,9 @@ function DashboardPage1() {
       {!searchInput && (
         <PaginationComponent page={page} handlePageChange={handlePageChange} />
       )}
+      <div className="Dashboard_Footer">
+        <Footer />
+      </div>
     </div>
   );
 }

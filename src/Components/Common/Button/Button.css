@@ -6,17 +6,11 @@
   width: 150px;
   padding: 12px 8px;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   cursor: pointer;
 }
-
-/* .Outlined_btn .db-Btn {
-  background-color: #1976d2;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  width: 150px;
-  padding: 12px 8px;
-  border: none;
-  border-radius: 20px;
-} */
+.btn .db-Btn:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 20px white;
+  transition: all 0.3s ease-in-out;
+}

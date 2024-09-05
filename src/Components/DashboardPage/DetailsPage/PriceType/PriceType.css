@@ -1,0 +1,14 @@
+.PriceType {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.PriceTypetoggle {
+  border: 2px solid white;
+  background-color: #fff;
+  color: black;
+  height: 50px;
+  font-weight: 800;
+}

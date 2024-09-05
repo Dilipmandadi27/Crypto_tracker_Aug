@@ -4,6 +4,7 @@ import Button from "../../Common/Button/Button";
 import { delay, motion } from "framer-motion";
 import phone1 from "../../../assets/phone1.svg";
 import gradient1 from "../../../assets/gradient1.svg";
+import OutlineBtn from "./OutlineBtn/OutlineBtn";
 
 function Main() {
   return (
@@ -41,6 +42,7 @@ function Main() {
           transition={{ duration: 0.5, delay: 1.5 }}
         >
           <Button />
+          <OutlineBtn />
         </motion.div>
       </div>
       <div className="phone-container">

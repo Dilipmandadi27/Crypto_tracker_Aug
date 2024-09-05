@@ -10,6 +10,7 @@ function ComparePage() {
     <div className="ComparePage">
       <Header />
       <SelectCoins />
+
       <Footer />
     </div>
   );

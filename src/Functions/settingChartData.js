@@ -1,7 +1,6 @@
 import { convertDate } from "./ConvertDate";
 
 const settingChartData = (setChartData, prices) => {
-  // if (Array.isArray(prices)) {
   setChartData({
     labels: prices.map((price) => convertDate(price[0])),
     datasets: [
@@ -16,9 +15,6 @@ const settingChartData = (setChartData, prices) => {
       },
     ],
   });
-  // } else {
-  //   console.error("Expected prices to be an array, but received:", prices);
-  // }
 };
 
 export default settingChartData;

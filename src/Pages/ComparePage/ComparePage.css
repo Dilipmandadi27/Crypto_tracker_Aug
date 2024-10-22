@@ -1,0 +1,20 @@
+.Compare_coins {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Compare_coin1 {
+  background: rgb(27, 27, 27);
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.compare_desc {
+  margin-top: -50px !important;
+  margin-bottom: -220px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}

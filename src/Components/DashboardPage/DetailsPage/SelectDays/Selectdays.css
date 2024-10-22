@@ -1,7 +1,12 @@
 .selectdays {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 30px;
+}
+
+.selectdays p {
+  width: 100px;
 }
 
 .select {
@@ -10,4 +15,5 @@
   color: black;
   width: 120px;
   height: 40px;
+  padding-left: 5px;
 }

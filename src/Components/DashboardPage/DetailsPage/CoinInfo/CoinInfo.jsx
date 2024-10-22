@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import "./CoinInfo.css";
 
 function CoinInfo({ heading, desc }) {
+  const description = typeof desc === "string" ? desc : "";
+
   const shortDesc =
-    desc.slice(0, 350) + "<span style='color:#1976d2'> Read More...</span>";
-  const longDesc = desc + "<span style='color:#1976d2'> Read Less...</span>";
+    description.slice(0, 350) +
+    "<span style='color:#1976d2'> Read More...</span>";
+  const longDesc =
+    description + "<span style='color:#1976d2'> Read Less...</span>";
 
   const [flag, setFlag] = useState(false);
   return (
     <div className="CoinInfo">
-      <h2>{heading}</h2>
+      <h2>{heading || "No Title Available"}</h2>
       <p
         onClick={() => setFlag(!flag)}
         className="coin-info-desc"

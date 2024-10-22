@@ -26,7 +26,8 @@
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1",
-    "styled-components": "^6.1.12"
+    "styled-components": "^6.1.12",
+    "proxy": "https://api.coingecko.com"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

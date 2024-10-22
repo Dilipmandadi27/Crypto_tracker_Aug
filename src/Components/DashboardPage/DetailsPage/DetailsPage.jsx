@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../../Common/Header/Header";
@@ -10,7 +9,7 @@ import CoinInfo from "./CoinInfo/CoinInfo";
 import { getCoinData } from "../../../Functions/getCoinData";
 import getCoinPrice from "../../../Functions/getCoinPrice";
 import LineChart from "./LineChart/LineChart";
-import { convertDate } from "../../../Functions/ConvertDate";
+// import { convertDate } from "../../../Functions/ConvertDate";
 import SelectDays from "./SelectDays/SelectDays";
 import settingChartData from "../../../Functions/settingChartData";
 import TogglePriceType from "./PriceType/PriceType";
@@ -36,20 +35,6 @@ function DetailsPage() {
       coinObject(setCoinData, data);
       const prices = await getCoinPrice(id, days, priceType);
       if (prices && prices.length > 0) {
-        // setChartData({
-        //   labels: prices.map((price) => convertDate(price[0])),
-        //   datasets: [
-        //     {
-        //       data: prices.map((price) => price[1]),
-        //       borderColor: "#3a80e9",
-        //       borderWidth: 2,
-        //       fill: true,
-        //       tension: 0.25,
-        //       backgroundColor: "rgba(58,128,233,0.1)",
-        //       pointRadius: 0,
-        //     },
-        //   ],
-        // });
         settingChartData(setChartData, prices);
         setIsLoading(false);
       }

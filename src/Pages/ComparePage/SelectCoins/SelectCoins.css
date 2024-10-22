@@ -1,5 +1,6 @@
 .container_select {
   display: flex;
+  align-items: center;
 }
 
 .SelectCoins {
@@ -9,5 +10,9 @@
   gap: 20px;
   color: white;
   width: 250px;
+  margin-top: 130px;
+}
+
+.select_Days {
   margin-top: 130px;
 }

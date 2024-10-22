@@ -21,9 +21,9 @@ function Header({ toggleTheme }) {
           <Link to="/">
             <p className="link">Home</p>
           </Link>
-          <Link to="/compare">
+          {/* <Link to="/compare">
             <p className="link">Compare</p>
-          </Link>
+          </Link> */}
 
           <Link to="/dashboard">
             <Button variant="default">DashBoard</Button>
